@@ -108,17 +108,17 @@ export function FavoriteTeamCard({ game, onToggleFavorite, className }: Favorite
       <Dialog open={showDialog} onOpenChange={setShowDialog}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Remove from Favorites</DialogTitle>
+            <DialogTitle>Pašalinti mėgstamą komandą</DialogTitle>
             <DialogDescription>
-              Are you sure you want to remove {teamToRemove?.name} from your favorite teams?
+            Ar tikrai norite pašalinti {teamToRemove?.name} iš savo mėgstamų komandų?
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
             <Button variant="outline" onClick={() => setShowDialog(false)}>
-              Cancel
+              Atšaukti
             </Button>
             <Button variant="destructive" onClick={handleConfirmRemove}>
-              Remove
+              Pašalinti
             </Button>
           </DialogFooter>
         </DialogContent>
